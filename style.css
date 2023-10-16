@@ -172,3 +172,43 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+/* about section */
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.about__image img {
+  max-width: 450px;
+  margin: auto;
+}
+
+.about__content h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.about__grid {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about__card h4 {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--primary-color);
+}
+
+.about__card p {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+}
