@@ -125,3 +125,50 @@ a {
   justify-content: flex-end;
   gap: 1rem;
 }
+
+/* header section */
+.header {
+  background-color: var(--extra-light);
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, calc(var(--max-width) / 2))
+    minmax(0, calc(var(--max-width) / 2))
+    minmax(0, 1fr);
+}
+
+.header__content {
+  padding: 5rem 1rem;
+  grid-column: 2/3;
+}
+
+.header__content h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5rem;
+  color: var(--text-dark);
+}
+
+.header__content p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__image {
+  grid-column: 3/5;
+}
+
+.header__image img {
+  height: 100%;
+  object-fit: cover;
+}
