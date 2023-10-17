@@ -50,6 +50,12 @@ ScrollReveal().reveal('.about__content .about__grid', {
   delay: 2000,
 });
 
+// contact section
+ScrollReveal().reveal('.contact__image img', {
+  ...scrollRevealOption,
+  origin: 'left',
+});
+
 const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 'auto',

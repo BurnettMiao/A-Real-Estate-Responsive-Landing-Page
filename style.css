@@ -318,3 +318,62 @@ a {
   color: var(--text-dark);
   text-align: right;
 }
+
+/* contact section */
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact__image img {
+  max-width: 450px;
+  margin: auto;
+}
+
+.contact__content form {
+  width: 100%;
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact__content .form__group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.contact__content :is(input, textarea) {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background-color: var(--extra-light);
+  border-radius: 5px;
+}
+
+.contact__content textarea {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact__content input::placeholder {
+  color: var(--text-light);
+}
+
+.contact__content button {
+  max-width: fit-content;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  color: var(--white);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact__content button:hover {
+  background-color: var(--primary-color-dark);
+}
