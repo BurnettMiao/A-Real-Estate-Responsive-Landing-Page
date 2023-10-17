@@ -49,3 +49,10 @@ ScrollReveal().reveal('.about__content .about__grid', {
   ...scrollRevealOption,
   delay: 2000,
 });
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 30,
+});
