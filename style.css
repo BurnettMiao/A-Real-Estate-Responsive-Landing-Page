@@ -377,3 +377,60 @@ a {
 .contact__content button:hover {
   background-color: var(--primary-color-dark);
 }
+
+/* footer section */
+.footer {
+  background-color: var(--secondary-color);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer__col h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.footer__col p {
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.footer__col a {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--extra-light);
+  transition: 0.3s;
+}
+
+.footer__col a span {
+  margin-right: 5px;
+}
+
+.footer__col a:hover {
+  color: var(--primary-color);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__socials span {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--white);
+  text-align: center;
+}
